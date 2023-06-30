@@ -1,9 +1,10 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 * {
     border: red solid 1px;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -25,4 +26,30 @@ body {
 .sidebar a {
     text-decoration: none;
     color: #fff;
+}
+
+main .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main .top .first-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main .top .second-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main .top .second-row .contact-card {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
